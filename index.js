@@ -13,14 +13,14 @@ function addToCart(item) {
  // write your code here
  var tempItem = {[item]: Math.floor(Math.random()*100)};
  cart.unshift(Object.assign(tempItem, {itemName: item, itemPrice: tempItem[item]}));
- message = `${cart[0].itemName} has been added to your cart.`;
+ var message = `${cart[0].itemName} has been added to your cart.`;
  console.log(message);
  return message;
 }
 
 function viewCart() {
   // write your code here
-  message = "Your shopping cart is empty";
+  var message = "Your shopping cart is empty";
   for (var i = 0; i < cart.length; i++)
   {
     if (i == 0)
@@ -42,7 +42,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  total = 0;
+  var total = 0;
   for (var i = 0; i < cart.length; i++) {
     total += cart[i].itemPrice;
   }
@@ -51,7 +51,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  found = false;
+  var found = false;
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName == item) {
       cart.splice(i,1);
@@ -64,6 +64,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  var message = "";
   if (cardNumber == undefined) {
     message = "Sorry, we don't have a credit card on file for you.";
   } else {
