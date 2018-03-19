@@ -60,6 +60,7 @@ function removeFromCart(item) {
       break;
     }
   }
+  //console.log();
   return found ? cart : "That item is not in your cart.";
 }
 
