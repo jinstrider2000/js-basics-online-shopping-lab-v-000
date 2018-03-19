@@ -27,7 +27,7 @@ function viewCart() {
     {
       message = `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}`;
     }
-    else if (i < cart.length-1 && length > 2)
+    else if (i < cart.length-1 && cart.length > 2)
     {
       message = `${message}, ${cart[i].itemName} at $${cart[i].itemPrice}`;
     }
