@@ -15,7 +15,7 @@ function addToCart(item) {
  cart.unshift(Object.assign(tempItem, {itemName: item, itemPrice: tempItem[item]}));
  var message = `${cart[0].itemName} has been added to your cart.`;
  console.log(message);
- return message;
+ return getCart();
 }
 
 function viewCart() {
