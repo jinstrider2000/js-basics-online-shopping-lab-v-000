@@ -37,6 +37,7 @@ function viewCart() {
     }
   }
   message = `${message}.`;
+  console.log(message);
   return message;
 }
 
